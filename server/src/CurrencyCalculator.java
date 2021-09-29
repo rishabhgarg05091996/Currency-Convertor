@@ -60,14 +60,14 @@ public class CurrencyCalculator {
         catch(Exception ex) {
             System.out.println("There is some issue in Transaction!!" + ex);
         }
-	}
+	} //[END OF MAIN FUNCTION]
 	
     /****  This function is used to calculate the amount for conversion as we have 
      * source and target Currency conversion as a Base Euros */
     public static Double convertCurrencyRate(Double sourceAmount, Double targetAmount, Double monetaryValue) {
         Double conversionAmount = (targetAmount * monetaryValue) / sourceAmount;
         return conversionAmount;
-    }
+    } //[END OF convertCurrencyRate FUNCTION]
 
     // This function is used to hit the endpoint with parameters as symbols!!
 	public static String getCurrencyConversion(String sourceCurrency, 
@@ -101,6 +101,6 @@ public class CurrencyCalculator {
 			scanner.close();
             return errorResponse;
         }
-	}
+	} //[END OF getCurrencyConversion FUNCTION]
 
 }
