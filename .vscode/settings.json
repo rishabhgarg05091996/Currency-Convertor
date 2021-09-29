@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": [
+        "client/src",
+        "server/src"
+    ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "json-simple-1.1.1.jar"
+    ]
+}
